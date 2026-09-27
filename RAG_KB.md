@@ -9,7 +9,7 @@ Document
  -> validation
  -> parsing
  -> structure-aware chunking
- -> Qwen3-Embedding-0.6B embedding
+ -> embeddinggemma embedding
  -> vector index
  -> lexical index
  -> metadata store

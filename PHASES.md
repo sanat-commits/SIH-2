@@ -106,7 +106,7 @@ Exit tests:
 Implement:
 - ingestion
 - chunking
-- Qwen3-Embedding-0.6B
+- embeddinggemma
 - BM25
 - dense search
 - RRF

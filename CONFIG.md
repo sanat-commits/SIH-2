@@ -11,7 +11,7 @@ All operational values must be configuration-driven.
 - generation parameters
 
 ### Embeddings
-- Qwen3-Embedding-0.6B identifier
+- embeddinggemma identifier
 - embedding runtime settings
 
 ### Agents

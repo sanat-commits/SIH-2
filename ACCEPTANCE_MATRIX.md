@@ -10,7 +10,7 @@
 | OCR | Real local OCR adapter works | PENDING (Phase 8) |
 | Knowledge | Persistent KB retrieval works | PENDING (Phase 10) |
 | RAG | BM25 + dense + RRF works | PENDING (Phase 10) |
-| Embeddings | Configured local embedding model (embeddinggemma / Qwen) used for vectors | PENDING (Phase 10) |
+| Embeddings | embeddinggemma used for vectors | PENDING (Phase 10) |
 | Documents | PDF/DOCX/XLSX processing works | PENDING (Phase 9) |
 | Attachments | Transient by default | PENDING (Phase 9) |
 | KB ingestion | Explicit and persistent | PENDING (Phase 10) |

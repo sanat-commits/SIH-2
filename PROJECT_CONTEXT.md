@@ -22,7 +22,7 @@ Generative model:
 - Gemma only.
 
 Embedding model:
-- Qwen3-Embedding-0.6B for RAG embeddings.
+- embeddinggemma for RAG embeddings.
 
 Do not silently add another generative LLM.
 

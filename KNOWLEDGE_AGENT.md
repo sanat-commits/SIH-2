@@ -12,7 +12,7 @@ Search the persistent organizational Knowledge Base and return evidence.
 
 The KB supports:
 - lexical retrieval
-- dense retrieval using Qwen3-Embedding-0.6B
+- dense retrieval using embeddinggemma
 - reciprocal rank fusion
 - technical identifier handling
 - configurable query/evidence thresholds

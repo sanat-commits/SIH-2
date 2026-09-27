@@ -4,7 +4,7 @@ This package is the implementation specification for the SIH26117 prototype.
 
 ## Core rule
 
-The system uses **Gemma as the only generative model**. Specialist agents are logical agent roles powered by the same Gemma runtime. Qwen3-Embedding-0.6B is used only for embeddings/RAG and is not an agent.
+The system uses **Gemma as the only generative model**. Specialist agents are logical agent roles powered by the same Gemma runtime. embeddinggemma is used only for embeddings/RAG and is not an agent.
 
 The architecture is deliberately capability-driven and configuration-driven.
 
@@ -41,7 +41,7 @@ The Main Agent must choose specialist agents from their registered capabilities.
 - Multimodal image/document processing
 - Persistent Knowledge Base
 - BM25 + dense retrieval + RRF
-- Qwen3-Embedding-0.6B embeddings
+- embeddinggemma embeddings
 - Python sandbox
 - File reading
 - Calculations

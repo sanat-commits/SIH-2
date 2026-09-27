@@ -16,7 +16,7 @@ Specialist agents are logical roles powered by Gemma with:
 - different authorized tools
 - task-local state
 
-Use Qwen3-Embedding-0.6B only for embeddings/RAG.
+Use embeddinggemma only for embeddings/RAG.
 
 ## 2. Required architecture
 
@@ -177,7 +177,7 @@ Explicit KB ingestion:
 
 Use:
 - BM25
-- Qwen3-Embedding-0.6B
+- embeddinggemma
 - dense retrieval
 - RRF
 - configurable ranking/filtering
