@@ -1,17 +1,17 @@
 # Implementation Checklist
 
 ## Before coding
-- [ ] Inspect repository
-- [ ] Identify current Gemma runtime
-- [ ] Identify current attachment handling
-- [ ] Identify current RAG
-- [ ] Identify current tools
-- [ ] Identify current artifact generation
-- [ ] Identify all hardcoded routing/value paths
+- [x] Inspect repository
+- [x] Identify current Gemma runtime
+- [x] Identify current attachment handling
+- [x] Identify current RAG
+- [x] Identify current tools
+- [x] Identify current artifact generation
+- [x] Identify all hardcoded routing/value paths
 
 ## Runtime
 - [ ] Gemma adapter
-- [ ] configuration validation
+- [x] configuration validation
 - [ ] streaming/events
 - [ ] structured model output
 
@@ -37,7 +37,7 @@
 - [ ] audit store
 
 ## Regression protection
-- [ ] no keyword router
+- [x] no keyword router (verified by test_no_legacy_hardcoded_router_remains)
 - [ ] no hardcoded outputs
 - [ ] no hardcoded sample documents
 - [ ] no hardcoded citation counts

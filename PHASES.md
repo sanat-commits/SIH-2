@@ -2,17 +2,17 @@
 
 Do not skip an exit gate.
 
-## Phase 0 — Reset and baseline
+## Phase 0 — Reset and baseline [COMPLETE]
 
 Build a clean repository.
 
 Exit tests:
-- application starts
-- health check works
-- configuration loads
-- no legacy hardcoded router remains
+- [x] application starts
+- [x] health check works
+- [x] configuration loads
+- [x] no legacy hardcoded router remains
 
-## Phase 1 — Gemma runtime
+## Phase 1 — Gemma runtime [NOT STARTED]
 
 Implement one reliable local Gemma runtime adapter.
 
