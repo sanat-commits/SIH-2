@@ -1,0 +1,87 @@
+app:
+  name: "SIH26117 Sovereign Agentic Workbench"
+  version: "0.1.0"
+  environment: "development"
+  host: "127.0.0.1"
+  port: 8000
+  log_level: "INFO"
+
+security:
+  sovereign_mode: true
+  allow_external_network: false
+  session_timeout_seconds: 3600
+
+model:
+  provider: "ollama"
+  model_id: "gemma4:e2b"
+  endpoint: "http://127.0.0.1:11434"
+  context_window: 131072
+  temperature: 0.1
+  request_timeout_seconds: 120.0
+
+embeddings:
+  provider: "ollama"
+  model_id: "embeddinggemma:latest"
+  endpoint: "http://127.0.0.1:11434"
+  dimension: 768
+  batch_size: 16
+  request_timeout_seconds: 60.0
+
+orchestration:
+  max_turns: 15
+  max_delegation_depth: 3
+  max_tool_calls_per_turn: 5
+  task_timeout_seconds: 300.0
+
+agents:
+  enabled_agents:
+    - "main_agent"
+    - "reasoning_agent"
+    - "coding_agent"
+    - "vision_agent"
+    - "knowledge_agent"
+    - "document_agent"
+    - "data_agent"
+
+tools:
+  enabled_tools:
+    - "delegate_to_agent"
+    - "search_knowledge"
+    - "calculate"
+    - "run_python"
+    - "read_file"
+    - "create_docx"
+    - "create_xlsx"
+    - "ocr_extract"
+    - "verify_artifact"
+
+sandbox:
+  execution_timeout_seconds: 30.0
+  max_stdout_bytes: 1048576       # 1 MB
+  max_stderr_bytes: 1048576       # 1 MB
+  max_file_size_bytes: 10485760   # 10 MB
+  network_disabled: true
+  working_dir_base: "storage/sandbox"
+
+ocr:
+  engine: "pytesseract"
+  tesseract_cmd: "C:\\Program Files\\Tesseract-OCR\\tesseract.exe"
+  languages: ["eng"]
+  dpi: 300
+  contrast_adjustment: true
+
+rag:
+  chunk_size: 512
+  chunk_overlap: 64
+  top_k_dense: 10
+  top_k_lexical: 10
+  top_k_final: 5
+  rrf_k: 60
+  min_relevance_threshold: 0.25
+
+storage:
+  base_dir: "storage"
+  task_state_dir: "storage/tasks"
+  kb_dir: "storage/kb"
+  artifacts_dir: "storage/artifacts"
+  audit_dir: "storage/audit"
